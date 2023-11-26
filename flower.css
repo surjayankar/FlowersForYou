@@ -5,16 +5,36 @@
   transform: translate(-50%, -50%);
   z-index: 2; /* Ensure the butterfly is above the flower petal */
 }
+.antenna {
+  position: absolute;
+  top: -14px; /* Adjust the top position to sit on the flower petal */
+  width: 2px;
+  height: 20px;
+  background-color: black;
+  z-index: 3;
+}
+
+.antenna--left {
+  left: -4px;
+  
+  transform: rotate(-30deg);
+}
+
+.antenna--right {
+  right: -4px;
+  transform: rotate(30deg);
+}
 
 .butterfly .body {
   width: 10px;
-  height: 20px;
-  background-color: #693c0a;
+  height: 10px;
+  background-color: yellow;
   border-radius: 50%;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  
 }
 
 .butterfly .wing {
@@ -22,7 +42,7 @@
   top: 50%;
   width: 40px;
   height: 20px;
-  background-color: yellow;
+  background-color: dodgerblue;
   border-radius: 50%;
 }
 
@@ -35,6 +55,25 @@
 .butterfly .wing--right {
   right: -30px;
   transform: rotate(-20deg);
+}
+
+/* Styles for spots on wings */
+.spot {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: rebeccapurple;
+  border-radius: 50%;
+}
+
+.spot--left {
+  top: 20%;
+  left: 20%;
+}
+
+.spot--right {
+  top: 20%;
+  left: 60%;
 }
 
 /* Styles for butterfly on flower element 1 */
