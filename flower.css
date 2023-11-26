@@ -1,3 +1,59 @@
+.butterfly {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2; /* Ensure the butterfly is above the flower petal */
+}
+
+.butterfly .body {
+  width: 10px;
+  height: 20px;
+  background-color: #693c0a;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.butterfly .wing {
+  position: absolute;
+  top: 50%;
+  width: 40px;
+  height: 20px;
+  background-color: yellow;
+  border-radius: 50%;
+}
+
+.butterfly .wing--left {
+  left: -30px;
+  transform: rotate(20deg);
+}
+
+
+.butterfly .wing--right {
+  right: -30px;
+  transform: rotate(-20deg);
+}
+
+/* Styles for butterfly on flower element 1 */
+.flower--1 .butterfly {
+  top: -10%; /* Adjust the top position to sit on the flower petal */
+  left: 40%; /* Adjust the left position to sit on the flower petal */
+}
+/* Styles for butterfly on flower element 2 */
+.flower--2 .butterfly {
+  top: -10%;
+  left: 70%;
+}
+
+/* Styles for butterfly on flower element 3 */
+.flower--3 .butterfly {
+  top: -10%;
+  left: 30%;
+}
+
 *,
 *::after,
 *::before {
