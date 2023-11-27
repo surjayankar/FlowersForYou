@@ -7,21 +7,21 @@
 }
 .antenna {
   position: absolute;
-  top: -14px; /* Adjust the top position to sit on the flower petal */
+  top: -8px; /* Adjust the top position to sit on the flower petal */
   width: 2px;
-  height: 20px;
+  height: 10px;
   background-color: black;
   z-index: 3;
 }
 
 .antenna--left {
-  left: -4px;
+  left: -2px;
   
   transform: rotate(-30deg);
 }
 
 .antenna--right {
-  right: -4px;
+  right: -2px;
   transform: rotate(30deg);
 }
 
@@ -40,28 +40,41 @@
 .butterfly .wing {
   position: absolute;
   top: 50%;
-  width: 40px;
-  height: 20px;
+  width: 20px;
+  height: 10px;
   background-color: dodgerblue;
   border-radius: 50%;
 }
 
 .butterfly .wing--left {
-  left: -30px;
+  left: -15px;
   transform: rotate(20deg);
 }
 
 
 .butterfly .wing--right {
-  right: -30px;
+  
+  right: -15px;
   transform: rotate(-20deg);
+}
+.butterfly .wing--left2 {
+  top: 8px;
+  left: -12.5px;
+  transform: rotate(160deg);
+}
+
+
+.butterfly .wing--right2{
+  top: 8px;
+  right: -12.5px;
+  transform: rotate(-160deg);
 }
 
 /* Styles for spots on wings */
 .spot {
   position: absolute;
-  width: 10px;
-  height: 10px;
+  width: 5px;
+  height: 5px;
   background-color: rebeccapurple;
   border-radius: 50%;
 }
